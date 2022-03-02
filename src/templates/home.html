@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block customCSS %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-3" style="clear: both;">
+    <h3 class="alignleft"> Welcome! {{ current_user.name }}</h3>
+    <h3 class="alignright" id=time></h3>
+</div>
+
+<script>
+    var timeDisplay = document.getElementById("time");
+    function refreshTime() {
+    var hours = new Date().getHours();
+    hours = String("0" + hours).slice(-2);
+    var min = new Date().getMinutes();
+    min = String("0" + min).slice(-2);
+    var sec = new Date().getSeconds();
+    sec = String("0" + sec).slice(-2);
+    timeDisplay.innerHTML = hours + " : " + min + " : " + sec;
+    }
+    setInterval(refreshTime, 1000);
+    
+</script>
+{% endblock %}

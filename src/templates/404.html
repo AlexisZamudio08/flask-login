@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block customCSS %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center p-4">Page not found </h1>
+{% endblock %}
