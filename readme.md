@@ -2,16 +2,24 @@
 
 #Python version used for this project. Python 3.9.7
 
-#Install virtualenv tool (global). pip install virtualenv
+#Install virtualenv tool (global). 
+  pip install virtualenv
 
-#Go to Flask-login folder and create and activate environment. python -m venv venv cd venv/bin source activate
+#Go to Flask-login folder and create and activate environment. 
+  python -m venv venv 
+  cd venv/bin source activate
 
-#Install requirements needed for this project pip install -r requirements.txt
+#Install requirements needed for this project 
+  pip install -r requirements.txt
 
 #Under flask_login/src, in config.py modify your credentials for db connection.
 
-#Run server, under flask_login/src in command prompt execute python index.py
+#Run server, under flask_login/src in command prompt execute 
+  python index.py
 
-#As response, the previous execution will generate a localhost url, #Copy and paste that url in your browser and you must to get access to the main login window
+#As response, the previous execution will generate a localhost url, 
+#Copy and paste that url in your browser and you must to get access to the main login window
 
-#Finally test the login access with credentials: user: admin password: test#01
+#Finally test the login access with credentials: 
+  user: admin 
+  password: test#01
