@@ -1,6 +1,5 @@
 #This is a config file taken by the flask main app.
 from distutils.debug import DEBUG
-from random import random
 
 from gevent import config
 
